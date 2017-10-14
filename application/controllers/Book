@@ -1,0 +1,25 @@
+<?php
+require APPPATH . '/libraries/REST_Controller.php';
+
+Class Book Extends REST_Controller{
+	function_construct($config ='rest')
+	{
+	parent::_construct($config);
+	}
+
+	
+	//untuk menampilkan data
+		function get_index()
+		{
+			$data = array('response'=>'ok')
+			return $this -> response($data,200);
+		}
+
+			//untuk mengirim data
+			function index_post(){
+
+
+			}	
+
+}
+?>
